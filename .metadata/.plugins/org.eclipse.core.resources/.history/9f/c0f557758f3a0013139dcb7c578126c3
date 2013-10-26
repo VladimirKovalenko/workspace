@@ -1,0 +1,14 @@
+package com.homework.candidates;
+
+import com.homework.workpeople.Human;
+
+public class Sidorov extends Human {
+
+	private int salary=1000;
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hi, I'm a Sidorov...";
+	}
+}

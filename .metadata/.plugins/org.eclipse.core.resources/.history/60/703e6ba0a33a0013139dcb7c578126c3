@@ -1,0 +1,33 @@
+package com.homework.factory;
+
+//import com.homework.workpeople.Ivanov;
+
+public class Factory {
+
+	//Мнимый отдел кадров на заводе, где сотрудники проходят регистрацию(перерегистрацию).
+	public static void main (String [] args)
+	{
+		//Входит 3 рабочих в отдел кадров...
+		com.homework.workpeople.Ivanov ivanov=new com.homework.workpeople.Ivanov();
+		com.homework.workpeople.Petrovich petrov=new com.homework.workpeople.Petrovich();
+		com.homework.candidates.Sidorov sidorov=new com.homework.candidates.Sidorov();
+
+		//...и здороваются.
+		for(int i=0; i<3; i++)System.out.println(ivanov+"\n"+petrov+"\n"+sidorov);
+		
+		//Потом их просят представится более детально для проверки.
+		ivanov.setMainInfo("Иван", "Иванович", "Иванов", 1951);
+		petrov.setMainInfo("Михаил", "Петрович", "Дергачёв", 1968);
+		sidorov.setMainInfo("Ваня", "Сидоров");
+		sidorov.setBirthYear(1989);
+		
+		System.out.println(	"\n1 person is "+ivanov.getInfo(2013)+
+							"\n2 person is "+petrov.getInfo(2013)+
+							"\n3 person is "+sidorov.getInfo(2013)+"\n");
+		
+		System.out.println(ivanov.getSalary()+" "+petrov.getSalary()+" "+sidorov.getSalary());
+		System.out.println(ivanov.get()+" "+petrov.getClass()+" "+sidorov.getClass());
+		
+	}
+
+}

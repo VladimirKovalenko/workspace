@@ -1,0 +1,11 @@
+import WorkPeople.Human;
+
+
+public class Ivanov extends Human {
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hello, I'm Ivanov!";
+	}
+}

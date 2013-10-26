@@ -1,0 +1,124 @@
+package com.homework.workpeople;
+
+import com.homework.additional.Direction;
+
+//public class Human {
+public class Human {
+
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private int birthYear;
+	private boolean isHealthy=true;
+	private String diagnosis;
+	private int salary; 
+	private Direction category;
+
+	//Здоров ли работник
+	public String healthInfo()
+	{
+		if(this.diagnosis==null) this.diagnosis="";
+		if(this.isHealthy)return (this.firstName+" is helthy " + this.diagnosis+". ");
+		else return(this.firstName+" is ill " + this.diagnosis+". ");
+	}
+	
+	public void setHealthy(boolean isHealthy, String diagnosis) {
+		this.isHealthy = isHealthy;
+		this.diagnosis = diagnosis;
+	}
+	
+	public Direction getCategory() {
+		return category;
+	}
+
+	public void setCategory(Direction category) {
+		this.category = category;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+//	@Override
+//	public String toString() {
+//		// TODO Auto-generated method stub
+//		return "Hello, I'm Ivanov!";
+//	}
+	
+	public int getBirthYear() {
+		return birthYear;
+	}
+
+	public void setBirthYear(int birthYear) {
+		this.birthYear = birthYear;
+	}
+
+	public String getFullName()
+	{
+		if(this.middleName==null) this.middleName="";
+		String names=firstName+" "+middleName+" "+lastName;
+		names = names.replace("  ", " ");
+		return names; 
+	}
+	
+	public int getAge(int currentYear)
+	{
+		return currentYear-birthYear;
+	}
+	
+	public String getInfo(int currentYear)
+	{
+		if(this.birthYear==0)return getFullName();
+		return getFullName()+" age "+getAge(currentYear);
+	}
+	
+	public void setMainInfo(String firstName, String lastName) 
+	{
+		this.firstName=firstName;
+		this.lastName=lastName;
+	}
+	
+	public void setMainInfo(String firstName, String middleName, String lastName) 
+	{
+		this.firstName=firstName;
+		this.middleName=middleName;
+		this.lastName=lastName;
+	}
+	
+	public void setMainInfo(String firstName, String middleName, String lastName, int birthYear) 
+	{
+		this.firstName=firstName;
+		this.middleName=middleName;
+		this.lastName=lastName;
+		this.birthYear=birthYear;
+	}
+	
+	//Любимая фраза по пути на работу
+	public void phraseOnTheWay()
+	{
+		System.out.println("Good weather!");
+	}
+ 	//Конструктор для набора срднего специалиста
+ 	public Human()
+ 	{
+ 		salary=2000;
+ 		isHealthy=true;
+ 		category=Direction.lower;
+ 		diagnosis=".";
+ 	}
+ 	
+ 	public Human(int salary, boolean isHealthy, Direction category, String diagnosis)
+ 	{
+ 		this.salary=salary;
+ 		this.isHealthy=isHealthy;
+ 		this.category=category;
+ 		this.diagnosis=diagnosis;
+ 	}
+ 	
+
+
+}

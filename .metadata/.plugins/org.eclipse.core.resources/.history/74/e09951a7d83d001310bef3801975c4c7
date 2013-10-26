@@ -1,0 +1,8 @@
+package com.homework.additional;
+
+public enum WorkerCategory { 
+ 	   high, 
+ 	   medium ,
+ 	   lower , 
+	   prelower;
+ 	} 

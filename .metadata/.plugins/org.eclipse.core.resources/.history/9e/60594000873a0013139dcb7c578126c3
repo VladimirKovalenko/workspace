@@ -1,0 +1,10 @@
+package com.homework.candidates;
+
+public class Sidorov {
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hi, I'm a Sidorov...";
+	}
+}

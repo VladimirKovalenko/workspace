@@ -1,0 +1,7 @@
+package com.homework.additional;
+
+public enum IlnessType {
+	high { 
+	        public IlnessType opposite() { return high; } 
+	   }; 
+}

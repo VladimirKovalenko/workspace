@@ -1,0 +1,30 @@
+package com.homework.workpeople;
+
+
+public class Petrovich extends Human {
+
+	public int salary=3000;
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hello, I'm Petrovich!";
+	}
+	
+	private boolean isSleepingRoomPresent;
+	
+	private int countOfWheels;
+	
+	public boolean isSleepingRoomPresent() {
+		return isSleepingRoomPresent;
+	}
+
+	public void setSleepingRoomPresent(boolean isSleepingRoomPresent) {
+		this.isSleepingRoomPresent = isSleepingRoomPresent;
+	}
+	
+	public void changeCountOfWheels(int count)
+	{
+		countOfWheels = count;
+	}
+}

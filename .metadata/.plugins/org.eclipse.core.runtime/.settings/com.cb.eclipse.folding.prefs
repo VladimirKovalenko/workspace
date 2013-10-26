@@ -1,0 +1,13 @@
+collapse.comment_blocks=false
+collapse.header=false
+collapse.imports=false
+collapse.innerType=false
+collapse.javadocs=false
+collapse.static_initializers=false
+collapse.userDefined=false
+eclipse.preferences.version=1
+fold.getterSetter=true
+fold.methods=false
+fold.topLevelType=false
+fold.userDefined=true
+user.defined.entries=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><regions/>

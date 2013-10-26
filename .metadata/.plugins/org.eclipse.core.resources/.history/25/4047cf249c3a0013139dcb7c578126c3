@@ -1,0 +1,13 @@
+package com.homework.factory;
+
+public class Temp 
+{
+	public static void main()
+	{
+		com.homework.workpeople.Ivanov iv=new com.homework.workpeople.Ivanov();
+		int f=iv.getSalary();
+		System.out.println(f);
+	}
+	
+	
+}

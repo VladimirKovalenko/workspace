@@ -1,0 +1,21 @@
+package com.homework.additional;
+
+public class Enum{
+	public enum Direction { 
+	 	   high { 
+	 	        public Direction opposite() { return high; } 
+	 	   }, 
+	 	   medium { 
+	 	        public Direction opposite() { return medium; } 
+	 	   },
+	 	   lower { 
+		        public Direction opposite() { return lower; } 
+		   }, 
+		   prelower { 
+		        public Direction opposite() { return prelower; } 
+		   }; 
+	 	 
+	 	   public abstract Direction opposite(); 
+	 	}
+}
+ 

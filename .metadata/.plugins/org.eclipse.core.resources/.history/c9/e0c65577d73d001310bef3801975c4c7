@@ -1,0 +1,7 @@
+package com.homework.additional;
+
+public enum IlnessType {
+	high { 
+	       return high;  
+	   }; 
+}

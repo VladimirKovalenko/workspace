@@ -1,0 +1,9 @@
+package com.homework.factory;
+
+public class Additional {
+
+	public void fun(Object x)
+	{
+		x.getSalary();
+	}
+}

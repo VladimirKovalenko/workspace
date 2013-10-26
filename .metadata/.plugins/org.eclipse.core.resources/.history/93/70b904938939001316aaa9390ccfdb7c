@@ -1,0 +1,72 @@
+
+public class Main_5 {
+
+public static int method=1;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		switch (method) 
+		{ 
+			case 0:
+				test0();
+				break; 
+			case 1: 
+				test1();
+				break; 
+			case 2:
+				test2();
+				break;
+			case 3:
+				test3();
+				break;
+			default:
+				System.out.println("Invalid numbre of test");
+		}
+	}
+
+	/*Создать программу, которая будет проверять попало ли случайно 
+	 * выбранное из отрезка [5;155] целое число в интервал (25;100) 
+	 * и сообщать результат на экран.
+	Примеры работы программы:
+	
+	Число 113 не содержится в интервале (25,100)
+	Число 72 содержится в интервале (25,100)
+	Число 25 не содержится в интервале (25,100)
+	Число 155 не содержится в интервале (25,100)*/
+	public static void test0()
+	{
+		int randNumber=(int)Math.round((Math.random()*150+5));
+		if(randNumber>25 && randNumber<100) System.out.println("Число "+randNumber+" содержится в интервале (25,100)");
+		else System.out.println("Число "+randNumber+" не содержится в интервале (25,100)");
+	}
+
+	/*Создать программу, выводящую на экран случайно сгенерированное 
+	 * трёхзначное натуральное число и его наибольшую цифру.
+	Примеры работы программы:
+	
+	В числе 208 наибольшая цифра 8
+	В числе 774 наибольшая цифра 7
+	В числе 613 наибольшая цифра 6*/
+	public static void test1()
+	{
+		int randNumber=0;
+		while(randNumber<99)
+		{
+			randNumber=(int)Math.round((Math.random()*1000));
+		}
+		int a,b,c;
+		a=randNumber%10;
+		b=((int)(randNumber/10))%10;
+		c=((int)(randNumber/100))%10;
+		System.out.println("В число "+randNumber+" наибольшая цифра "+Math.max(Math.max(a, b), c));
+	}
+
+	public static void test2()
+	{
+	}
+	
+	public static void test3()
+	{
+	}
+}
+

@@ -1,0 +1,62 @@
+import java.util.Scanner;
+public class Main_6 {
+
+public static int method=-1;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		switch (method) 
+		{
+			
+			case -1:
+				example0();
+				break;
+			case 0:
+				test0();
+				break; 
+			case 1: 
+				test1();
+				break; 
+			case 2:
+				test2();
+				break;
+			case 3:
+				test3();
+				break;
+			default:
+				System.out.println("Invalid numbre of test");
+		}
+	}
+
+	public static void example0()
+	{
+		Scanner sc = new Scanner(System.in); // создаём объект класса Scanner
+		double  i = sc.nextDouble(); // если ввести букву s, то случится ошибка во время исполнения
+        System.out.println(i/3);
+//        int i = 2;
+//        System.out.print("Введите целое число: ");
+//        if(sc.hasNextInt()) { // возвращает истинну если с потока ввода можно считать целое число
+//          i = sc.nextInt(); // считывает целое число с потока ввода и сохраняем в переменную
+//          System.out.println(i*2);
+//        } else {
+//          System.out.println("Вы ввели не целое число");
+//        }
+	}
+	
+	public static void test0()
+	{
+	}
+
+	public static void test1()
+	{
+	}
+
+	public static void test2()
+	{
+	}
+
+	public static void test3()
+	{
+	}
+}
+

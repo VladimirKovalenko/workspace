@@ -1,0 +1,8 @@
+package com.homework.additional;
+
+public enum Direction { 
+ 	   high, 
+ 	   medium ,
+ 	   lower , 
+	   prelower;
+ 	} 

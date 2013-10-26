@@ -1,0 +1,22 @@
+package com.homework.candidates;
+
+import com.homework.workpeople.Human;
+
+public class Sidorov extends Human {
+
+	public int salary=1000;
+	
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hi, I'm a Sidorov...";
+	}
+}

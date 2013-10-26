@@ -1,0 +1,28 @@
+package com.homework.workpeople;
+
+
+public class Petrovich extends Human {
+
+	private int salary=3000;
+	private String category="medium";
+		
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hello, I'm Petrovich!";
+	}
+	
+//	
+//	public void changeCountOfWheels(int count)
+//	{
+//		countOfWheels = count;
+//	}
+}
