@@ -1,0 +1,46 @@
+package com.homework.workpeople;
+
+
+public class Petrovich extends Human {
+
+	private int salary=3000;
+	private String category="medium";
+	private boolean isHealthy=true;
+	private String diagnosis;
+	
+	//Здоров ли работник
+	public String healthInfo()
+	{
+		if(this.diagnosis==null) this.diagnosis=".";
+		if(this.isHealthy)return ("Worker is helthy " + this.diagnosis+". ");
+		else return("Worker is ill " + this.diagnosis+". ");
+	}
+
+	public void setHealthy(boolean isHealthy, String diagnosis) {
+		this.isHealthy = isHealthy;
+		this.diagnosis = diagnosis;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Hello, I'm Petrovich!";
+	}
+
+}
